@@ -80,7 +80,6 @@ export default function Confetti() {
           drift: randomInRange(-0.5, 0.5),
           ticks: 300,
           scalar: randomInRange(0.5, 0.8),
-          colors: colors,
         });
       }, 150);
     }, 1600);
