@@ -2,10 +2,6 @@
 
 import { useEffect, useState, useTransition } from 'react';
 
-// CSS import is safe here because this is a client component
-// Next.js will handle it correctly during SSR/CSR
-import '@n8n/chat/style.css';
-
 export default function ColorMeChatWidget() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [isError, setIsError] = useState(false);
@@ -16,6 +12,13 @@ export default function ColorMeChatWidget() {
     if (isLoaded) return;
 
     console.log('[ColorMeChat] Component mounted, initializing...');
+
+    // Dynamically import CSS to avoid SSR issues
+    import('@n8n/chat/style.css').then(() => {
+      console.log('[ColorMeChat] CSS loaded successfully');
+    }).catch((err) => {
+      console.error('[ColorMeChat] Failed to load CSS:', err);
+    });
 
     // Add global error handler for chat-related errors
     const handleError = (event: ErrorEvent) => {
