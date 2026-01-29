@@ -2,7 +2,8 @@
 
 import { useState } from 'react';
 import { Sparkles, CheckCircle, XCircle, Loader2 } from 'lucide-react';
-import { submitContactFormLead, extractEventTypeFromPath } from '@/lib/n8nClient';
+import { submitQuotationRequest, type QuotationFormData } from '@/lib/quotationClient';
+import { extractEventTypeFromPath } from '@/lib/n8nClient';
 import type { EventType } from '@/lib/chatTypes';
 
 // Form state interface
@@ -99,41 +100,28 @@ export default function ContactForm({
     setErrors({});
   };
 
-  const openMailtoFallback = () => {
-    // Email fallback removed to prevent spam scraping
-    // The form submits via N8N webhook; if that fails, user sees error modal
-    console.warn('Form submission failed. N8N webhook unavailable and email fallback disabled.');
-  };
-
   const submitToN8N = async (): Promise<boolean> => {
-    // Check webhook URL is configured
-    const webhookUrl = process.env.NEXT_PUBLIC_N8N_LEAD_WEBHOOK_URL
-      || process.env.NEXT_PUBLIC_N8N_WEBHOOK_URL;
-
-    if (!webhookUrl) {
-      console.warn('N8N webhook URL not configured, falling back to mailto');
-      return false;
-    }
-
     try {
       // Get current page URL
       const pageUrl = typeof window !== 'undefined' ? window.location.href : '';
 
-      // Use the n8nClient helper
-      await submitContactFormLead(
+      // Use the new quotation API which securely calls N8N
+      const result = await submitQuotationRequest(
         {
           name: formData.name,
           email: formData.email,
           venue: formData.venue,
           message: formData.message,
         },
-        eventType,
-        pageUrl
+        {
+          eventType,
+          pageUrl,
+        }
       );
 
-      return true;
+      return result.success;
     } catch (error) {
-      console.error('Error submitting to N8N:', error);
+      console.error('[ContactForm] Error submitting quotation:', error);
       throw error;
     }
   };
@@ -156,9 +144,10 @@ export default function ContactForm({
         setSubmissionState('success');
         resetForm();
       } else {
-        // Webhook not configured, fall back to mailto
-        openMailtoFallback();
-        setSubmissionState('idle');
+        setSubmissionState('error');
+        setErrorMessage(
+          'Unable to submit your request. Please try again or reach us through our social media channels.'
+        );
       }
     } catch (error) {
       setSubmissionState('error');
