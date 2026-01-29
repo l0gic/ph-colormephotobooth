@@ -54,22 +54,13 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Get webhook URL and API key from environment variables
+    // Get webhook URL from environment variables
     const webhookUrl = process.env.N8N_RESERVATIONS_WEBHOOK_URL;
-    const apiKey = process.env.N8N_RESERVATIONS_API_KEY;
 
     if (!webhookUrl) {
       console.error('N8N_RESERVATIONS_WEBHOOK_URL not configured');
       return NextResponse.json(
         { success: false, error: 'Service configuration error' },
-        { status: 500 }
-      );
-    }
-
-    if (!apiKey) {
-      console.error('N8N_RESERVATIONS_API_KEY not configured');
-      return NextResponse.json(
-        { success: false, error: 'Service authentication error' },
         { status: 500 }
       );
     }
@@ -92,13 +83,11 @@ export async function POST(request: NextRequest) {
       event_type: n8nPayload.event_type,
     });
 
-    // Call N8N webhook with authentication
+    // Call N8N webhook
     const response = await fetch(webhookUrl, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': `Bearer ${apiKey}`,
-        'X-API-Key': apiKey, // Alternative header for some N8N setups
       },
       body: JSON.stringify(n8nPayload),
     });
