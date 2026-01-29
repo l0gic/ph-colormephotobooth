@@ -28,12 +28,12 @@ function validateQuotationData(data: QuotationRequest): { valid: boolean; error?
     return { valid: false, error: 'Invalid email address' };
   }
 
-  if (!data.venue || data.venue.trim().length < 3) {
+  if (!data.venue || data.venue.trim().length < 2) {
     return { valid: false, error: 'Venue information is required' };
   }
 
-  if (!data.message || data.message.trim().length < 10) {
-    return { valid: false, error: 'Message must be at least 10 characters' };
+  if (!data.message || data.message.trim().length < 2) {
+    return { valid: false, error: 'Please tell us about your event' };
   }
 
   return { valid: true };
