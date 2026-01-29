@@ -225,7 +225,7 @@ export default function ColorMeChatWidget() {
         console.log('[ColorMeChat] Chat module imported successfully');
 
         // Check if webhook URL is accessible
-        const webhookUrl = 'https://n8n.chatgenius24x7.com/webhook/0f12b47f-019a-4b8b-a208-98404ecc35c4/chat';
+        const webhookUrl = 'https://n8n.chatgenius24x7.com/webhook/4091fa09-fb9a-4039-9411-7104d213f601/chat';
         console.log('[ColorMeChat] Webhook URL:', webhookUrl);
 
         // Initialize chat with error handling and listeners
