@@ -1,13 +1,13 @@
-# Color Me Booth - Complete AI/LLM Reference
+# Coloring Photobooth - Complete AI/LLM Reference
 
 ## Site Information
 
-**Site Name:** Color Me Booth
+**Site Name:** Coloring Photobooth
 **URL:** https://ph.colormephotobooth.com
 **Location:** Manila, Philippines (Metro Manila area: BGC, Makati, Alabang, Quezon City, Tagaytay)
 
 **Description:**
-Color Me Booth is Manila's first roamer coloring booth for events. We transform special moments into custom-made coloring pages on the spot. Unlike traditional photo booths that are just "a flash and a print," we provide a 15-minute creative experience that doubles as the ultimate personalized party favor.
+Coloring Photobooth is Manila's first roamer coloring booth for events. We transform special moments into custom-made coloring pages on the spot. Unlike traditional photo booths that are just "a flash and a print," we provide a 15-minute creative experience that doubles as the ultimate personalized party favor.
 
 **What We Offer:**
 - Roamer coloring booth technology (no bulky booth, no lines)
@@ -19,7 +19,7 @@ Color Me Booth is Manila's first roamer coloring booth for events. We transform 
 
 **Contact & Social Media:**
 - Instagram: @colorme.photobooth
-- Facebook: coloringbookbooth
+- Facebook: coloringphotobooth
 - Website: https://ph.colormephotobooth.com
 
 ---
@@ -289,14 +289,14 @@ Most corporate activities are forgettable. We provide engaging brand experiences
 - "We wanted something different from the typical photo booth. This was perfect - sophisticated, interactive, and created genuine memories." - James & Sarah, Makati
 
 ### Debuts
-- "My debut was perfect because of Color Me Booth! All my friends and relatives colored their portraits." - Sofia M., Alabang
+- "My debut was perfect because of Coloring Photobooth! All my friends and relatives colored their portraits." - Sofia M., Alabang
 - "Even my titos who never join anything were coloring! My grandma has her portrait framed in her sala." - Alexandra R., QC
 - "The rose gold crayon sets were such an elegant touch!" - Gabbie L., Makati
 
 ### Corporate Events
 - "Best team building activity we've ever done! Employees from different departments bonded while coloring." - Roberto S., HR Director, BPO
 - "For our product launch, this was perfect! Our logo was on every print, and attendees loved the interactive element." - Maria L., Marketing Manager, Tech Startup
-- "We've used Color Me Booth for 3 company events now. Consistent quality, professional service." - Elena D., HR Manager, Retail Chain
+- "We've used Coloring Photobooth for 3 company events now. Consistent quality, professional service." - Elena D., HR Manager, Retail Chain
 
 ---
 
@@ -314,20 +314,20 @@ Most corporate activities are forgettable. We provide engaging brand experiences
 ## Social Media
 
 **Instagram:** @colorme.photobooth
-**Facebook:** coloringbookbooth
+**Facebook:** coloringphotobooth
 
 ---
 
 ## Business Details
 
-**Company Name:** Color Me Booth Manila
+**Company Name:** Coloring Photobooth Manila
 **Year Established:** 2026
 **Service Type:** Event Entertainment & Photo Booth Services
 **Technology:** AI-powered line art conversion, Roamer booth technology
 **Specialization:** Custom coloring page creation for events
 
 **Unique Selling Proposition:**
-Manila's first and only roamer coloring booth. We don't just take photos - we create experiences. Unlike traditional photo booths that produce forgettable prints, Color Me Booth transforms your event into a creative, engaging activity that produces keepsakes guests will treasure for years.
+Manila's first and only roamer coloring booth. We don't just take photos - we create experiences. Unlike traditional photo booths that produce forgettable prints, Coloring Photobooth transforms your event into a creative, engaging activity that produces keepsakes guests will treasure for years.
 
 **Target Events:**
 - Kids' Birthday Parties (1st birthday, 7th birthday, etc.)
@@ -390,4 +390,4 @@ Manila's first and only roamer coloring booth. We don't just take photos - we cr
 
 ---
 
-*This file is maintained to help AI systems and Large Language Models accurately understand and index the Color Me Booth website offerings, services, and business details.*
+*This file is maintained to help AI systems and Large Language Models accurately understand and index the Coloring Photobooth website offerings, services, and business details.*
